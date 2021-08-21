@@ -53,7 +53,7 @@ img {
 /* --------------HEADER------------------- */
 .header {
   /* border: 2px dashed #2196f3; */
-  margin-bottom: 94px;
+  /* border: 2px solid #f6f6f6; */
 }
 .header .container {
   display: flex;
@@ -139,6 +139,8 @@ img {
 .hero {
   /* border: 2px dashed #2196f3; */
   background-color: #2f303a;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero-title {
   font-weight: 900;
@@ -175,37 +177,45 @@ img {
 .hero-box {
   padding-bottom: 94px;
 }
-/* --------------HANG---------------- */
-.hang-item:not(:last-child) {
+/* --------------PECULIARITIES---------------- */
+.peculiarities {
+  /* padding-top: 94px; */
+  padding-bottom: 94px;
+}
+.peculiarities-item:not(:last-child) {
   margin-right: 30px;
 }
-.hang-item {
-  padding-bottom: 94px;
+.peculiarities-item {
+  /* padding-bottom: 94px; */
   /* border: 2px dashed #2196f3; */
 }
-.hang-list {
+.peculiarities-list {
   display: flex;
 }
-.hang-secondary-title {
-  font-weight: 700d;
+.peculiarities-secondary-title {
+  font-weight: 700;
   font-size: 14px;
-  line-height: 1.14px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--main-title-color);
   margin-bottom: 16px;
 }
-.hang-text {
+.peculiarities-text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
 }
 /* ----------------TEAM------------------- */
-.team {
+.team .container {
+  padding-bottom: 94px;
+  border-color: #f5f4fa;
+  /* border: 2px dashed #2196f3; */
+  padding-top: 83px;
   padding-bottom: 94px;
 }
-.route-title,
+.activities-title,
 .team-main-title {
   font-weight: 700;
   font-size: 36px;
@@ -214,31 +224,28 @@ img {
   letter-spacing: 0.03em;
   color: var(--main-title-color);
 }
-.route {
+.activities {
   padding-bottom: 105px;
   /* border: 2px dashed #2196f3; */
 }
-.route-item:not(:last-child) {
+.activities-item:not(:last-child) {
   margin-right: 30px;
 }
-.route-title {
+.activities-title {
   padding-bottom: 50px;
 }
-.route-list {
+.activities-list {
   display: flex;
 }
 .team-main-title {
-  padding-bottom: 50px;
-  padding-top: 83px;
+  margin-bottom: 50px;
 }
 
 .team {
-  /* border: 2px dashed #2196f3; */
 }
 .team-list {
   display: flex;
   /* border: 2px dashed #2196f3; */
-  margin-right: -30px;
 }
 .team-item > .team-list {
   flex-basis: calc(100% / 4 - 30px);
@@ -246,7 +253,6 @@ img {
 }
 .team-item {
   margin-right: 30px;
-
   /* border: 2px dashed #2196f3; */
 }
 .team-secondary-title {
@@ -263,7 +269,7 @@ img {
 .team-foto {
 }
 .team-secondary-title {
-  padding-top: 30px;
+  margin-top: 30px;
   padding-bottom: 10px;
 }
 .team-text {
@@ -283,14 +289,15 @@ img {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #2196f3;
-  padding-top: 60px;
-  padding-bottom: 20px;
 }
 .footer-logo-part {
   color: #ffffff;
 }
+.contact-address-item {
+  margin-bottom: 9px;
+}
 .contact-address {
-  padding-top: 20px;
+  margin-top: 20px;
 }
 .contact-address-map {
   font-size: 14px;
@@ -306,16 +313,19 @@ img {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
-  margin-top: 20px;
 }
-.footer {
+.footer .container {
   background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 /* -------------FILTR-------------------- */
 .button-projects-list {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 94px;
+  padding-bottom: 50px;
 }
 
 .button-projects-btn {
@@ -328,11 +338,31 @@ img {
   height: 38px;
   border-radius: 4px;
   margin-right: 8px;
-  margin-bottom: 50px;
+}
+.button-all {
+  width: 73px;
+  height: 38px;
+}
+.button-web {
+  width: 128px;
+  height: 38px;
+}
+.button-app {
+  width: 145px;
+  height: 38px;
+}
+.button-dis {
+  width: 103px;
+  height: 38px;
+}
+.button-mark {
+  width: 130px;
+  height: 38px;
 }
 .button-projects-btn:hover,
 .button-projects-btn:focus {
   background-color: var(--accent-color);
+  color: #ffffff;
 }
 
 /* ------------------PROJECTS------------- */
@@ -349,7 +379,11 @@ img {
   margin-bottom: 30px;
 }
 .projects-foto {
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
+}
+.projects-card {
+  padding: 20px 24px;
+  border: 2px solid #f6f6f6;
 }
 .projects-title {
   font-weight: 700;
